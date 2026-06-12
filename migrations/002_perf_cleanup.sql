@@ -28,4 +28,4 @@ CREATE POLICY task_events_tenant_isolation ON task_events
   USING (true /* TODO: scope to tenant via parent relation */);
 
 -- === Pirabase AI Fix: rollback section ===
--- rollback: DROP TABLE IF EXISTS task_events CASCADE; ALTER TABLE sessions_archived RENAME TO sessions;
+-- rollback: ALTER TABLE task_events RENAME TO task_events_archived; -- PIR: archived instead of dropped (reversible) ALTER TABLE sessions_archived RENAME TO sessions;
