@@ -1,0 +1,12 @@
+{
+  "name": "test1-taskflow",
+  "version": "1.0.0",
+  "description": "Taskflow — task tracking API on Neon Postgres (Pirabase readiness-check demo app)",
+  "type": "module",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  }
+}
